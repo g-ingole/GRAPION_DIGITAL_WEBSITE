@@ -34,13 +34,13 @@ const collaborations = [
     desc: "Partnered for AI skill development, digital workshops and student innovation programs.",
   },
 
-  {
-    image: "/vmv.webp",
-    title:
-      "VMV Commerce, JMT Arts & JJP Science College, Nagpur",
-    tag: "AI Workshop Conducted",
-    desc: "Conducted practical AI tools workshop with hands-on learning sessions for students.",
-  },
+  // {
+  //   image: "/vmv.webp",
+  //   title:
+  //     "VMV Commerce, JMT Arts & JJP Science College, Nagpur",
+  //   tag: "AI Workshop Conducted",
+  //   desc: "Conducted practical AI tools workshop with hands-on learning sessions for students.",
+  // },
 
   {
     image: "/stech.webp",
