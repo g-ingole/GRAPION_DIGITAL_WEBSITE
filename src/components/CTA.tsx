@@ -81,35 +81,38 @@ export default function CTA() {
           </p>
 
           {/* BUTTONS */}
-          <div className="cta-buttons">
-            <a
-              href="tel:+919822952807"
-              className="cta-btn primary"
-            >
-              <Phone size={18} />
-              Call Now
-            </a>
+<div className="cta-buttons">
 
-            <a
-              href={waLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn whatsapp"
-            >
-              <MessageCircle size={18} />
-              WhatsApp
-            </a>
+  <a href="tel:+919822952807" className="cta-btn primary">
+    <Phone size={18} />
+    Call Now
+  </a>
 
-            <a
-              href="#contact"
-              className="cta-btn outline"
-            >
-              <Calendar size={18} />
-              Book Consultation
-              <ArrowRight size={16} />
-            </a>
-          </div>
+  <a
+    href={waLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="cta-btn whatsapp"
+  >
+    <MessageCircle size={18} />
+    WhatsApp
+  </a>
 
+  <a
+  href="mailto:hellograpiondigital@gmail.com?subject=Business%20Inquiry&body=Hi%20Grapion%20Digital,"
+  className="cta-btn email"
+>
+  <Mail size={18} />
+  Email Us
+</a>
+
+  <a href="#contact" className="cta-btn outline">
+    <Calendar size={18} />
+    Book Consultation
+    <ArrowRight size={16} />
+  </a>
+
+</div>
           {/* STATS */}
           <div className="cta-stats">
             {[
@@ -245,14 +248,13 @@ export default function CTA() {
           line-height:1.9;
         }
 
-        .cta-buttons{
-          display:flex;
-          justify-content:center;
-          gap:1rem;
-          flex-wrap:wrap;
-
-          margin-bottom:4rem;
-        }
+       .cta-buttons{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:16px;
+}
 
         .cta-btn{
           display:inline-flex;
@@ -271,18 +273,24 @@ export default function CTA() {
           transition:0.3s ease;
         }
 
-        .cta-btn.primary{
-          background:
-            linear-gradient(
-              135deg,
-              #1D70EF,
-              #1559bf
-            );
+        
+        .cta-btn{
+          display:inline-flex;
+          align-items:center;
+          justify-content:center;
+          gap:0.7rem;
 
-          color:white;
+          padding:1rem 1.5rem;
 
-          box-shadow:
-            0 12px 30px rgba(29,112,239,0.28);
+          border-radius:14px;
+
+          text-decoration:none;
+
+          font-weight:700;
+
+          transition:0.3s ease;
+          flex: 0 0 auto;
+  margin: 0;
         }
 
         .cta-btn.primary:hover{
@@ -329,6 +337,27 @@ export default function CTA() {
 
           transform:translateY(-4px);
         }
+
+        .cta-btn.email{
+  background: rgba(245,183,49,0.08);
+
+  border: 1px solid rgba(245,183,49,0.25);
+
+  color: #F5B731;
+
+  box-shadow:
+    0 12px 30px rgba(245,183,49,0.15);
+}
+
+.cta-btn.email:hover{
+  transform: translateY(-4px);
+
+  background: rgba(245,183,49,0.15);
+
+  box-shadow:
+    0 18px 40px rgba(245,183,49,0.22);
+}
+
 
         .cta-stats{
           display:grid;
