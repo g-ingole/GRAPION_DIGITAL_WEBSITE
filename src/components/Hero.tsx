@@ -154,57 +154,58 @@ export default function Hero() {
         }
 
         .hero-container{
-          max-width:1200px;
-          margin:auto;
-          width:100%;
-          display:grid;
-          grid-template-columns:1fr 1fr;
-          gap:70px;
-          align-items:center;
-          position:relative;
-          z-index:2;
-        }
+   max-width:1350px;
+  margin:auto;
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+  position:relative;
+  z-index:2;
+}
 
         .hero-badge{
-          display:inline-flex;
-          align-items:center;
-          gap:10px;
-          background:rgba(29,112,239,0.08);
-          border:1px solid rgba(29,112,239,0.2);
-          padding:10px 18px;
-          border-radius:30px;
-          margin-bottom:25px;
-          color:#F5B731;
-          font-size:14px;
-          font-weight:600;
-        }
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:rgba(29,112,239,0.08);
+  border:1px solid rgba(29,112,239,0.2);
+  padding:8px 16px;
+  border-radius:30px;
+  margin-bottom:20px;
+  color:#F5B731;
+  font-size:13px;
+  font-weight:600;
+}
 
         .dot{
-          width:8px;
-          height:8px;
+          width:7px;
+          height:7px;
           border-radius:50%;
           background:#F5B731;
         }
 
         .hero-title{
-          font-size:clamp(2.5rem,5vw,4.5rem);
-          line-height:1.1;
-          color:white;
-          margin-bottom:25px;
-          font-weight:800;
-        }
+ 
+  line-height:1.08;
+  color:white;
+
+  font-weight:800;
+  font-size:clamp(3.7rem,4vw,2.1rem);
+margin-bottom:18px;
+}
 
         .hero-title span{
           color:#1D70EF;
         }
-
-        .hero-subtitle{
-          color:#A0A0B0;
-          font-size:1.1rem;
-          line-height:1.8;
-          max-width:560px;
-          margin-bottom:35px;
-        }
+.hero-subtitle{
+  color:#A0A0B0;
+  font-size:1rem;
+  line-height:1.75;
+  max-width:500px;
+  margin-bottom:25px;
+}
 
         .hero-buttons{
           display:flex;
@@ -394,6 +395,7 @@ export default function Hero() {
         @media(max-width:600px){
           .hero-section{
             padding-top:120px;
+              min-height:92vh;
           }
 
           .hero-title{
