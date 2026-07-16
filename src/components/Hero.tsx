@@ -80,10 +80,7 @@ export default function Hero() {
               <Star size={14} fill="#F5B731" stroke="#F5B731" />
               <Star size={14} fill="#F5B731" stroke="#F5B731" />
               <Star size={14} fill="#F5B731" stroke="#F5B731" />
-            </div>
-
-            <span>Trusted by growing brands across India</span>
-          </div>
+          
         </div>
 
         {/* RIGHT SIDE */}
