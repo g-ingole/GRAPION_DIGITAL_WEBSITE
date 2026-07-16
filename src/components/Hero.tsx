@@ -159,7 +159,7 @@ export default function Hero() {
   width:100%;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:40px;
+  gap:35px;
   align-items:center;
   position:relative;
   z-index:2;
