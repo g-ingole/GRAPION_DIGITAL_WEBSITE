@@ -1,6 +1,7 @@
 import {
   Phone,
   MessageCircle,
+  Mail,
   Calendar,
   ArrowRight,
   Sparkles,
@@ -146,6 +147,26 @@ export default function CTA() {
           box-sizing:border-box;
         }
 
+        .cta-btn.email{
+  background: rgba(245,183,49,0.08);
+
+  border: 1px solid rgba(245,183,49,0.25);
+
+  color: #F5B731;
+
+  box-shadow:
+    0 12px 30px rgba(245,183,49,0.15);
+}
+
+.cta-btn.email:hover{
+  transform: translateY(-4px);
+
+  background: rgba(245,183,49,0.15);
+
+  box-shadow:
+    0 18px 40px rgba(245,183,49,0.22);
+}
+
         .cta-card{
           position:relative;
 
@@ -248,12 +269,14 @@ export default function CTA() {
           line-height:1.9;
         }
 
-       .cta-buttons{
+      .cta-buttons{
   display:flex;
   justify-content:center;
   align-items:center;
   flex-wrap:wrap;
   gap:16px;
+
+  margin-bottom:2.5rem;   /* ya 2rem */
 }
 
         .cta-btn{
@@ -271,26 +294,22 @@ export default function CTA() {
           font-weight:700;
 
           transition:0.3s ease;
-        }
-
-        
-        .cta-btn{
-          display:inline-flex;
-          align-items:center;
-          justify-content:center;
-          gap:0.7rem;
-
-          padding:1rem 1.5rem;
-
-          border-radius:14px;
-
-          text-decoration:none;
-
-          font-weight:700;
-
-          transition:0.3s ease;
           flex: 0 0 auto;
   margin: 0;
+        }
+
+        .cta-btn.primary{
+          background:
+            linear-gradient(
+              135deg,
+              #1D70EF,
+              #1559bf
+            );
+
+          color:white;
+
+          box-shadow:
+            0 12px 30px rgba(29,112,239,0.28);
         }
 
         .cta-btn.primary:hover{
@@ -322,14 +341,12 @@ export default function CTA() {
         }
 
         .cta-btn.outline{
-          border:
-            1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.02);
+  color: #F0F0F0;
+  margin-left: 0.25rem;
+}
 
-          background:
-            rgba(255,255,255,0.02);
-
-          color:#F0F0F0;
-        }
 
         .cta-btn.outline:hover{
           background:
@@ -337,27 +354,6 @@ export default function CTA() {
 
           transform:translateY(-4px);
         }
-
-        .cta-btn.email{
-  background: rgba(245,183,49,0.08);
-
-  border: 1px solid rgba(245,183,49,0.25);
-
-  color: #F5B731;
-
-  box-shadow:
-    0 12px 30px rgba(245,183,49,0.15);
-}
-
-.cta-btn.email:hover{
-  transform: translateY(-4px);
-
-  background: rgba(245,183,49,0.15);
-
-  box-shadow:
-    0 18px 40px rgba(245,183,49,0.22);
-}
-
 
         .cta-stats{
           display:grid;
@@ -418,6 +414,7 @@ export default function CTA() {
 
           .cta-btn{
             width:100%;
+             margin: 0 4px;
           }
         }
 
