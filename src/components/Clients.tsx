@@ -108,12 +108,11 @@ export default function Clients() {
         }
 
         .marquee-track {
-          display: flex;
-          gap: 1rem;
-          width: max-content;
-          animation: scroll 25s linear infinite;
-          will-change: transform;
-        }
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
 
         @keyframes scroll {
           0% { transform: translateX(0); }
@@ -121,42 +120,59 @@ export default function Clients() {
         }
 
         /* CARD */
-        .client-card {
-          display: flex;
-          align-items: center;
-          gap: 0.6rem;
-          padding: 0.8rem 1.5rem;
-          background: #111;
-          border: 1px solid #1E1E2A;
-          border-radius: 10px;
-          white-space: nowrap;
-          flex-shrink: 0;
-          transition: all 0.25s ease;
-        }
+      .client-card {
+  width: 180px;
+  height: 180px;
 
-        .client-card:hover {
-          transform: scale(1.04);
-          border: 1px solid #1D70EF;
-          background: #151515;
-          box-shadow:
-            0 0 0 1px rgba(29, 112, 239, 0.25),
-            0 10px 25px rgba(29, 112, 239, 0.25);
-        }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-        .client-img {
-          width: 34px;
-          height: 34px;
-          object-fit: contain;
-          border-radius: 6px;
-          background: #0d0d0d;
-          padding: 4px;
-        }
+  gap: 1rem;
 
-        .client-name {
-          font-size: 0.9rem;
-          color: #8A8A9A;
-          font-weight: 600;
-        }
+  padding: 1.2rem;
+
+  background: #111;
+  border: 1px solid #1E1E2A;
+  border-radius: 18px;
+
+  flex-shrink: 0;
+
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+.client-card:hover {
+  transform: translateY(-6px);
+  border-color: #1D70EF;
+  background: #151515;
+  box-shadow:
+    0 12px 30px rgba(29,112,239,0.18);
+}
+
+       .client-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+
+  background: #0d0d0d;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.client-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #F0F0F0;
+
+  line-height: 1.4;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
       `}</style>
 
     </section>
