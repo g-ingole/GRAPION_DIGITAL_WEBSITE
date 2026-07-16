@@ -17,14 +17,27 @@ const services = [
   'Local SEO',
   'Website Creation',
   'Branding Design',
-  'Google Business Profile',
-];
+ ];
 
 const socials = [
   { icon: <Instagram size={18} />, href: 'https://www.instagram.com/hellograpiondigital/', label: 'Instagram' },
   { icon: <Facebook size={18} />, href: 'https://www.facebook.com/profile.php?id=61584827608890', label: 'Facebook' },
   { icon: <Youtube size={18} />, href: 'https://www.youtube.com/@GrapionDigital', label: 'YouTube' },
   { icon: <Linkedin size={18} />, href: 'https://www.linkedin.com/company/112000920/admin/dashboard/', label: 'LinkedIn' },
+  {
+    icon: (
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path d="M21.35 11.1H12v2.98h5.38c-.23 1.48-1.78 4.34-5.38 4.34a6.42 6.42 0 1 1 0-12.84c2.05 0 3.43.87 4.22 1.62l2.88-2.78A10.48 10.48 0 1 0 12 22c5.95 0 9.9-4.18 9.9-10.08 0-.68-.07-1.2-.15-1.82Z" />
+      </svg>
+    ),
+    href: 'https://share.google/6HD1QgdbjAa36meBM',
+    label: 'Google',
+  },
 ];
 
 export default function Footer() {
