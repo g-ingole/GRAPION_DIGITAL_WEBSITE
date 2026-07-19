@@ -127,24 +127,41 @@ export default function Services() {
         </div>
 
         {/* COMING SOON */}
-        <div className="coming-soon reveal">
-          <div className="coming-soon-card">
-            <div className="coming-icon">
-              <Zap size={24} />
-            </div>
+<div className="coming-soon reveal">
 
-            <div>
-              <span className="coming-badge">Coming Soon</span>
+  <div className="coming-soon-card">
+    <div className="coming-icon">
+      <Zap size={24} />
+    </div>
 
-              <h3>Performance Marketing</h3>
+    <div>
+      <span className="coming-badge">Coming Soon</span>
 
-              <p>
-                Advanced ad strategies designed to scale brands faster.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h3>Performance Marketing</h3>
+
+      <p>
+        Advanced ad strategies designed to scale brands faster.
+      </p>
+    </div>
+  </div>
+
+  <div className="coming-soon-card">
+    <div className="coming-icon">
+      <Zap size={24} />
+    </div>
+
+    <div>
+      <span className="coming-badge">Coming Soon</span>
+
+      <h3>AI Automation</h3>
+
+      <p>
+        Smart AI workflows, chatbots and business automation to save time and boost productivity.
+      </p>
+    </div>
+  </div>
+
+</div>
 
       {/* CSS */}
       <style>{`
