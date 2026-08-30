@@ -27,17 +27,17 @@ const features = [
 ];
 
 const collaborations = [
-  {
-    image: "/kdk.jpeg",
-    title: "KDK College, Nagpur",
-    tag: "Official MoU Signed",
-    desc: "Partnered for AI skill development, digital workshops and student innovation programs.",
-  },
+  // {
+  //   image: "/kdk.jpeg",
+  //   title: "KDK College, Nagpur",
+  //   tag: "Official MoU Signed",
+  //   desc: "Partnered for AI skill development, digital workshops and student innovation programs.",
+  // },
   {
     image: "/vmv.webp",
     title: "VMV Commerce, JMT Arts & JJP Science College, Nagpur",
-    tag: "AI Workshop Conducted",
-    desc: "Conducted practical AI tools workshop with hands-on learning sessions for students.",
+    tag: "Official MoU Signed",
+   desc: "Partnered for AI skill development, digital workshops and student innovation programs.",
   },
 ];
 
