@@ -36,17 +36,9 @@ const collaborations = [
 
   {
     image: "/vmv.webp",
-    title:
-      "VMV Commerce, JMT Arts & JJP Science College, Nagpur",
+    title: "VMV Commerce, JMT Arts & JJP Science College, Nagpur",
     tag: "Official MoU Signed",
     desc: "Partnered for AI skill development, digital workshops and student innovation programs.",
-  },
-
-  {
-    image: "/stech.webp",
-    title: "CadDesk S-Tech Academy, Nagpur",
-    tag: "Seminar Collaboration",
-    desc: "Organized seminars on AI, branding, digital skills and modern industry trends.",
   },
 ];
 
