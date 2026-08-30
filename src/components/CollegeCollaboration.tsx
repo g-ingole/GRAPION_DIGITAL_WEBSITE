@@ -27,12 +27,12 @@ const features = [
 ];
 
 const collaborations = [
-  // {
-  //   image: "/kdk.jpeg",
-  //   title: "KDK College, Nagpur",
-  //   tag: "Official MoU Signed",
-  //   desc: "Partnered for AI skill development, digital workshops and student innovation programs.",
-  // },
+  {
+    image: "/kdk.jpeg",
+    title: "KDK College, Nagpur",
+    tag: "Official MoU Signed",
+    desc: "Partnered for AI skill development, digital workshops and student innovation programs.",
+  },
 
   {
     image: "/vmv.webp",
@@ -42,12 +42,12 @@ const collaborations = [
     desc: "Partnered for AI skill development, digital workshops and student innovation programs.",
   },
 
-  // {
-  //   image: "/stech.webp",
-  //   title: "CadDesk S-Tech Academy, Nagpur",
-  //   tag: "Seminar Collaboration",
-  //   desc: "Organized seminars on AI, branding, digital skills and modern industry trends.",
-  // },
+  {
+    image: "/stech.webp",
+    title: "CadDesk S-Tech Academy, Nagpur",
+    tag: "Seminar Collaboration",
+    desc: "Organized seminars on AI, branding, digital skills and modern industry trends.",
+  },
 ];
 
 export default function CollegeCollaboration() {
