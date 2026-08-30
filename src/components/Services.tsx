@@ -1,3 +1,4 @@
+```tsx
 import {
   TrendingUp,
   Share2,
@@ -90,6 +91,7 @@ export default function Services() {
   return (
     <section id="services" className="services-section">
       <div className="services-container">
+
         {/* HEADER */}
         <div className="services-header reveal">
           <span className="section-tag">OUR SERVICES</span>
@@ -117,8 +119,12 @@ export default function Services() {
 
               <p>{service.benefit}</p>
 
-              {/* DYNAMIC LINK */}
-              <a href={service.link} className="service-link">
+              <a
+                href={service.link}
+                className="service-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Learn More
                 <ArrowRight size={16} />
               </a>
@@ -127,222 +133,245 @@ export default function Services() {
         </div>
 
         {/* COMING SOON */}
-<div className="coming-soon reveal">
+        <div className="coming-soon reveal">
 
-  <div className="coming-soon-card">
-    <div className="coming-icon">
-      <Zap size={24} />
-    </div>
+          <div className="coming-soon-card">
+            <div className="coming-icon">
+              <Zap size={24} />
+            </div>
 
-    <div>
-      <span className="coming-badge">Coming Soon</span>
+            <div>
+              <span className="coming-badge">Coming Soon</span>
 
-      <h3>Performance Marketing</h3>
+              <h3>Performance Marketing</h3>
 
-      <p>
-        Advanced ad strategies designed to scale brands faster.
-      </p>
-    </div>
-  </div>
+              <p>
+                Advanced ad strategies designed to scale brands faster.
+              </p>
+            </div>
+          </div>
 
-  <div className="coming-soon-card">
-    <div className="coming-icon">
-      <Zap size={24} />
-    </div>
+          <div className="coming-soon-card">
+            <div className="coming-icon">
+              <Zap size={24} />
+            </div>
 
-    <div>
-      <span className="coming-badge">Coming Soon</span>
+            <div>
+              <span className="coming-badge">Coming Soon</span>
 
-      <h3>AI Automation</h3>
+              <h3>AI Automation</h3>
 
-      <p>
-        Smart AI workflows, chatbots and business automation to save time and boost productivity.
-      </p>
-    </div>
-  </div>
+              <p>
+                Smart AI workflows, chatbots and business automation to save
+                time and boost productivity.
+              </p>
+            </div>
+          </div>
 
-</div>
+        </div>
+
+      </div>
 
       {/* CSS */}
       <style>{`
-        *{ box-sizing:border-box; }
-
-        .services-section{
-          background:#0B0C11;
-          padding:110px 20px;
-          position:relative;
-          overflow:hidden;
+        * {
+          box-sizing: border-box;
         }
 
-        .services-container{
-          max-width:1200px;
-          margin:auto;
+        .services-section {
+          background: #0B0C11;
+          padding: 110px 20px;
+          position: relative;
+          overflow: hidden;
         }
 
-        .services-header{
-          text-align:center;
-          margin-bottom:70px;
+        .services-container {
+          max-width: 1200px;
+          margin: auto;
         }
 
-        .section-tag{
-          display:inline-block;
-          padding:10px 18px;
-          border-radius:30px;
-          background:rgba(29,112,239,0.08);
-          border:1px solid rgba(29,112,239,0.2);
-          color:#1D70EF;
-          font-size:13px;
-          font-weight:700;
-          letter-spacing:1px;
-          margin-bottom:24px;
+        .services-header {
+          text-align: center;
+          margin-bottom: 70px;
         }
 
-        .services-title{
-          font-size:clamp(2.2rem,4vw,3.5rem);
-          font-weight:800;
-          color:white;
-          line-height:1.15;
-          margin-bottom:20px;
+        .section-tag {
+          display: inline-block;
+          padding: 10px 18px;
+          border-radius: 30px;
+          background: rgba(29,112,239,0.08);
+          border: 1px solid rgba(29,112,239,0.2);
+          color: #1D70EF;
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          margin-bottom: 24px;
         }
 
-        .services-title span{ color:#F5B731; }
-
-        .services-subtitle{
-          max-width:700px;
-          margin:auto;
-          color:#9EA0B3;
-          line-height:1.8;
-          font-size:1.05rem;
+        .services-title {
+          font-size: clamp(2.2rem,4vw,3.5rem);
+          font-weight: 800;
+          color: white;
+          line-height: 1.15;
+          margin-bottom: 20px;
         }
 
-        .services-grid{
-          display:grid;
-          grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-          gap:24px;
-          margin-bottom:70px;
+        .services-title span {
+          color: #F5B731;
         }
 
-        .service-card{
-          background:#12141C;
-          border:1px solid #1E212B;
-          border-radius:26px;
-          padding:32px 28px;
-          transition:0.35s ease;
-          position:relative;
-          overflow:hidden;
+        .services-subtitle {
+          max-width: 700px;
+          margin: auto;
+          color: #9EA0B3;
+          line-height: 1.8;
+          font-size: 1.05rem;
         }
 
-        .service-card:hover{
-          transform:translateY(-8px);
-          border-color:#1D70EF;
-          box-shadow:0 18px 40px rgba(0,0,0,0.35);
+        .services-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+          gap: 24px;
+          margin-bottom: 70px;
         }
 
-        .service-icon{
-          width:64px;
-          height:64px;
-          border-radius:18px;
-          background:rgba(29,112,239,0.08);
-          border:1px solid rgba(29,112,239,0.15);
-          display:flex;
-          align-items:center;
-          justify-content:center;
-          color:#1D70EF;
-          margin-bottom:24px;
+        .service-card {
+          background: #12141C;
+          border: 1px solid #1E212B;
+          border-radius: 26px;
+          padding: 32px 28px;
+          transition: 0.35s ease;
+          position: relative;
+          overflow: hidden;
         }
 
-        .service-card h3{
-          color:white;
-          font-size:1.2rem;
-          font-weight:700;
-          margin-bottom:14px;
+        .service-card:hover {
+          transform: translateY(-8px);
+          border-color: #1D70EF;
+          box-shadow: 0 18px 40px rgba(0,0,0,0.35);
         }
 
-        .service-card p{
-          color:#9EA0B3;
-          line-height:1.8;
-          font-size:15px;
-          margin-bottom:28px;
+        .service-icon {
+          width: 64px;
+          height: 64px;
+          border-radius: 18px;
+          background: rgba(29,112,239,0.08);
+          border: 1px solid rgba(29,112,239,0.15);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #1D70EF;
+          margin-bottom: 24px;
         }
 
-        .service-link{
-          display:inline-flex;
-          align-items:center;
-          gap:8px;
-          color:#F5B731;
-          text-decoration:none;
-          font-weight:600;
-          font-size:14px;
-          transition:0.3s ease;
+        .service-card h3 {
+          color: white;
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-bottom: 14px;
         }
 
-        .service-link:hover{
-          gap:12px;
+        .service-card p {
+          color: #9EA0B3;
+          line-height: 1.8;
+          font-size: 15px;
+          margin-bottom: 28px;
         }
 
-        .coming-soon{
-          display:flex;
-          justify-content:center;
+        .service-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          color: #F5B731;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 14px;
+          transition: 0.3s ease;
         }
 
-        .coming-soon-card{
-          width:100%;
-          max-width:720px;
-          background:linear-gradient(135deg,rgba(245,183,49,0.08),rgba(29,112,239,0.06));
-          border:1px dashed rgba(245,183,49,0.25);
-          border-radius:26px;
-          padding:30px;
-          display:flex;
-          align-items:center;
-          gap:22px;
+        .service-link:hover {
+          gap: 12px;
         }
 
-        .coming-icon{
-          width:70px;
-          height:70px;
-          border-radius:20px;
-          background:rgba(245,183,49,0.12);
-          display:flex;
-          align-items:center;
-          justify-content:center;
-          color:#F5B731;
+        .coming-soon {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 24px;
         }
 
-        .coming-badge{
-          display:inline-block;
-          background:#F5B731;
-          color:#0B0C11;
-          padding:6px 12px;
-          border-radius:20px;
-          font-size:12px;
-          font-weight:700;
-          margin-bottom:12px;
+        .coming-soon-card {
+          width: 100%;
+          background: linear-gradient(
+            135deg,
+            rgba(245,183,49,0.08),
+            rgba(29,112,239,0.06)
+          );
+          border: 1px dashed rgba(245,183,49,0.25);
+          border-radius: 26px;
+          padding: 30px;
+          display: flex;
+          align-items: center;
+          gap: 22px;
         }
 
-        .coming-soon-card h3{
-          color:white;
-          font-size:1.3rem;
-          margin-bottom:8px;
+        .coming-icon {
+          width: 70px;
+          height: 70px;
+          border-radius: 20px;
+          background: rgba(245,183,49,0.12);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #F5B731;
+          flex-shrink: 0;
         }
 
-        .coming-soon-card p{
-          color:#9EA0B3;
-          line-height:1.7;
+        .coming-badge {
+          display: inline-block;
+          background: #F5B731;
+          color: #0B0C11;
+          padding: 6px 12px;
+          border-radius: 20px;
+          font-size: 12px;
+          font-weight: 700;
+          margin-bottom: 12px;
         }
 
-        @media(max-width:768px){
-          .services-section{ padding:90px 18px; }
+        .coming-soon-card h3 {
+          color: white;
+          font-size: 1.3rem;
+          margin-bottom: 8px;
+        }
 
-          .services-title{ font-size:2.3rem; }
+        .coming-soon-card p {
+          color: #9EA0B3;
+          line-height: 1.7;
+        }
 
-          .services-grid{ grid-template-columns:1fr; }
+        @media(max-width:768px) {
+          .services-section {
+            padding: 90px 18px;
+          }
 
-          .coming-soon-card{
-            flex-direction:column;
-            text-align:center;
+          .services-title {
+            font-size: 2.3rem;
+          }
+
+          .services-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .coming-soon {
+            grid-template-columns: 1fr;
+          }
+
+          .coming-soon-card {
+            flex-direction: column;
+            text-align: center;
           }
         }
       `}</style>
     </section>
   );
 }
+```
