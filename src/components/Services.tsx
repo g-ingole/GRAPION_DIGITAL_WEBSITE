@@ -1,4 +1,4 @@
-```tsx
+
 import {
   TrendingUp,
   Share2,
@@ -374,4 +374,3 @@ export default function Services() {
     </section>
   );
 }
-```
