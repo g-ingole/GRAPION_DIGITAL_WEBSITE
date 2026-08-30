@@ -28,17 +28,10 @@ const features = [
 
 const collaborations = [
   {
-    image: "/kdk.jpeg",
-    title: "KDK College, Nagpur",
-    tag: "Official MoU Signed",
-    desc: "Partnered for AI skill development, digital workshops and student innovation programs.",
-  },
-
-  {
     image: "/vmv.webp",
     title: "VMV Commerce, JMT Arts & JJP Science College, Nagpur",
-    tag: "Official MoU Signed",
-    desc: "Partnered for AI skill development, digital workshops and student innovation programs.",
+    tag: "AI Workshop Conducted",
+    desc: "Conducted practical AI tools workshop with hands-on learning sessions for students.",
   },
 ];
 
@@ -73,8 +66,7 @@ export default function CollegeCollaboration() {
             pointerEvents: "none",
           }}
         />
-
-        <div
+<div
           style={{
             maxWidth: "1150px",
             margin: "0 auto",
@@ -161,8 +153,7 @@ export default function CollegeCollaboration() {
                     </div>
                   ))}
                 </div>
-
-                <div className="bottom-stats">
+ <div className="bottom-stats">
                   <div>
                     <h4>20+</h4>
                     <p>Sessions</p>
@@ -371,8 +362,7 @@ export default function CollegeCollaboration() {
 
             transition:0.35s ease;
           }
-
-          .glass-card:hover{
+ .glass-card:hover{
             transform:translateY(-8px);
 
             box-shadow:
@@ -568,7 +558,7 @@ export default function CollegeCollaboration() {
             text-transform:uppercase;
           }
 
-          .showcase-heading{
+.showcase-heading{
             font-size:
               clamp(2rem,4vw,3.2rem);
 
@@ -766,3 +756,5 @@ export default function CollegeCollaboration() {
     </>
   );
 }
+
+
